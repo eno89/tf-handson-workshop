@@ -15,6 +15,7 @@ resource "aws_instance" "hello-tf-instance" {
   tags = {
     owner = "Kabu"
     ttl   = "100"
+    ttl2  = "100"
   }
 }
 
