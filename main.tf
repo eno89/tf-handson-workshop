@@ -11,7 +11,7 @@ provider "aws" {
 resource "aws_instance" "hello-tf-instance" {
   ami = var.ami
 #  count = var.hello_tf_instance_count
-  count = 3
+  count = 0
   instance_type = var.hello_tf_instance_type
   tags = {
     owner = "Kabu"
