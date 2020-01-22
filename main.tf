@@ -1,4 +1,3 @@
-
 terraform {
   required_version = "~> 0.12"
 }
@@ -13,5 +12,9 @@ resource "aws_instance" "hello-tf-instance" {
   ami = var.ami
   count = var.hello_tf_instance_count
   instance_type = var.hello_tf_instance_type
+  tags = {
+    owner = "Kabu"
+    ttl   = "100"
+  }
 }
 
