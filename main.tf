@@ -16,7 +16,7 @@ resource "aws_instance" "hello-tf-instance" {
     owner = "Kabu"
     ttl   = "100"
     ttl2  = "100"
-    var  = "${formato("web%02d", count.index + 1)}"
+    var  = "${format("web%02d", count.index + 1)}"
   }
 }
 
